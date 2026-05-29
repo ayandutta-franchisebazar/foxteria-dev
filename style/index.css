@@ -46,7 +46,7 @@
 
 .hero-stats { display: flex; gap: 2.5rem; flex-wrap: wrap; margin-top: 3.5rem; animation: fadeUp .7s .4s ease both; }
 .hero-stat-item { text-align: center; }
-.hero-stat-num { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 900; color: white; line-height: 1; }
+.hero-stat-num { font-family: var(--font-heading); font-size: 2rem; font-weight: 900; color: white; line-height: 1; }
 .hero-stat-label { color: rgba(255,255,255,.55); font-size: .78rem; margin-top: 3px; }
 
 .hero-visual { animation: fadeUp .8s .2s ease both; }
@@ -78,7 +78,7 @@
 .about-img-placeholder i { font-size: 4rem; opacity: .6; }
 .about-badge {
   position: absolute; bottom: 24px; left: 24px; background: var(--magenta);
-  color: white; padding: 1rem 1.5rem; border-radius: 12px; font-family: 'Playfair Display', serif;
+  color: white; padding: 1rem 1.5rem; border-radius: 12px; font-family: var(--font-heading);
 }
 .about-badge .num { font-size: 2.2rem; font-weight: 900; line-height: 1; }
 .about-badge .txt { font-size: .75rem; opacity: .85; }
@@ -111,7 +111,7 @@
   color: var(--purple); margin-bottom: 1.2rem; transition: background .3s, color .3s;
 }
 .service-card:hover .service-icon { background: var(--purple); color: white; }
-.service-card h5 { font-family: 'DM Sans', sans-serif; font-size: 1rem; font-weight: 700; margin-bottom: .8rem; }
+.service-card h5 { font-family: var(--font-body); font-size: 1rem; font-weight: 700; margin-bottom: .8rem; }
 .service-card p { font-size: .875rem; color: var(--text-muted); line-height: 1.7; }
 .service-card ul { padding-left: 0; list-style: none; margin: 0; }
 .service-card ul li { font-size: .82rem; color: var(--text-muted); padding: .3rem 0; display: flex; align-items: flex-start; gap: 8px; }
@@ -124,22 +124,22 @@
    ========================================================================== */
 #stats { background: linear-gradient(135deg, var(--purple-dark) 0%, var(--purple) 100%); padding: 80px 0; }
 .stat-item { text-align: center; padding: 1.5rem; }
-.stat-num { font-family: 'Playfair Display', serif; font-size: 3rem; font-weight: 900; color: white; line-height: 1; }
+.stat-num { font-family: var(--font-heading); font-size: 3rem; font-weight: 900; color: white; line-height: 1; }
 .stat-num .stat-suffix { color: var(--magenta); }
 .stat-label { color: rgba(255,255,255,.65); font-size: .85rem; margin-top: .5rem; }
 
 #advantages { background: var(--off-white); }
 .adv-card { background: white; border-radius: 14px; padding: 2rem; height: 100%; border: 1.5px solid #ede9ff; transition: transform .3s, box-shadow .3s; position: relative; }
 .adv-card:hover { transform: translateY(-5px); box-shadow: 0 12px 30px rgba(81,21,158,.1); }
-.adv-num { font-family: 'Playfair Display', serif; font-size: 3rem; font-weight: 900; color: #ede9ff; line-height: 1; position: absolute; top: 1.2rem; right: 1.5rem; }
+.adv-num { font-family: var(--font-heading); font-size: 3rem; font-weight: 900; color: #ede9ff; line-height: 1; position: absolute; top: 1.2rem; right: 1.5rem; }
 .adv-icon { color: var(--purple); font-size: 1.8rem; margin-bottom: .8rem; }
-.adv-card h5 { font-size: 1rem; font-family: 'DM Sans', sans-serif; font-weight: 700; margin-bottom: .5rem; }
+.adv-card h5 { font-size: 1rem; font-family: var(--font-body); font-weight: 700; margin-bottom: .5rem; }
 .adv-card p { font-size: .875rem; color: var(--text-muted); line-height: 1.7; }
 
 #testimonials { background: white; }
 .testi-card { background: var(--off-white); border-radius: 14px; padding: 2rem; border: 1.5px solid #ede9ff; height: 100%; position: relative; }
 .testi-card::before {
-  content: '\201C'; font-family: 'Playfair Display', serif; font-size: 5rem; line-height: .8;
+  content: '\201C'; font-family: var(--font-heading); font-size: 5rem; line-height: .8;
   color: var(--purple); opacity: .15; position: absolute; top: 1rem; left: 1.5rem;
 }
 .testi-text { font-size: .9rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 1.5rem; font-style: italic; }
@@ -155,7 +155,7 @@
    FAQ & BLOG & CTA BANNER
    ========================================================================== */
 #faq { background: var(--off-white); }
-.accordion-button { font-family: 'DM Sans', sans-serif; font-size: .95rem; font-weight: 600; color: var(--text-dark) !important; background: white !important; box-shadow: none !important; }
+.accordion-button { font-family: var(--font-body); font-size: .95rem; font-weight: 600; color: var(--text-dark) !important; background: white !important; box-shadow: none !important; }
 .accordion-button:not(.collapsed) { color: var(--purple) !important; }
 .accordion-button::after { filter: hue-rotate(270deg); }
 .accordion-item { border: 1.5px solid #ede9ff !important; border-radius: 10px !important; margin-bottom: .6rem; overflow: hidden; }
@@ -168,7 +168,7 @@
 .blog-img-placeholder i { font-size: 2.5rem; color: rgba(255,255,255,.4); }
 .blog-body { padding: 1.5rem; }
 .blog-date { font-size: .75rem; color: var(--magenta); font-weight: 600; text-transform: uppercase; letter-spacing: .08em; }
-.blog-title { font-family: 'DM Sans', sans-serif; font-size: 1rem; font-weight: 700; margin: .5rem 0; color: var(--text-dark); }
+.blog-title { font-family: var(--font-body); font-size: 1rem; font-weight: 700; margin: .5rem 0; color: var(--text-dark); }
 .blog-excerpt { font-size: .85rem; color: var(--text-muted); line-height: 1.7; }
 
 #cta-banner { background: linear-gradient(135deg, var(--purple-dark) 0%, var(--purple) 60%, #8f25e0 100%); position: relative; overflow: hidden; padding: 80px 0; }
